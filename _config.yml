@@ -1,0 +1,57 @@
+# Site settings
+title: Hostinger Web Hosting & Horizon AI Website Builder
+email: info@example.com
+description: >-
+  Discover Hostinger's powerful web hosting solutions and the revolutionary Horizon AI website builder.
+  Create stunning websites in minutes with AI-powered tools and reliable hosting.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+referral_link: "https://hostinger.it?REFERRALCODE=RABBITWORLD"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Sass settings
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/
+
+# Default front matter
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+  - gemfiles
+  - README.md

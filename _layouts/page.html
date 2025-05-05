@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<section class="page-header section section--primary">
+    <div class="container">
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle %}
+            <p class="subtitle">{{ page.subtitle }}</p>
+        {% endif %}
+    </div>
+</section>
+
+<section class="page-content section">
+    <div class="container">
+        {{ content }}
+    </div>
+</section>
+
+{% if page.include_cta != false %}
+    {% include cta.html %}
+{% endif %}
