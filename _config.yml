@@ -4,8 +4,8 @@ email: info@example.com
 description: >-
   Discover Hostinger's powerful web hosting solutions and the revolutionary Horizon AI website builder.
   Create stunning websites in minutes with AI-powered tools and reliable hosting.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/jekyll-promo" # the subpath of your site, e.g. /blog
+url: "https://doda-agency.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 referral_link: "https://hostinger.it?REFERRALCODE=RABBITWORLD"
 
 # Build settings
